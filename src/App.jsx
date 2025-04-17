@@ -10,6 +10,7 @@ import ArtGeneration from './pages/ArtGeneration';
 import Gallery from './pages/Gallery';
 import Instructions from './pages/Instructions';
 import SetAvatar from './pages/SetAvatar';
+import ProtectedRoute from './components/ProtectedRoute';
 
 
 function App() {
@@ -29,16 +30,22 @@ function App() {
     {
       path: "/",
       element:
-        <ArtGeneration />
+        <ProtectedRoute>
+          <ArtGeneration />
+        </ProtectedRoute>
 
     },
     {
-      path:"/gallery",
-      element:<Gallery/>
-    },{
-      path:"/instructions",
-      element:<Instructions/>
-    } 
+      path: "/gallery",
+      element: <ProtectedRoute>
+        <Gallery />
+      </ProtectedRoute>
+    }, {
+      path: "/instructions",
+      element: <ProtectedRoute>
+        <Instructions />
+      </ProtectedRoute>
+    }
   ])
   return (
     <>
@@ -48,4 +55,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

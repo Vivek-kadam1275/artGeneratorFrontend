@@ -5,6 +5,11 @@ export const signupRoute=`${baseUrl}/api/auth/signup`;
 export const loginRoute=`${baseUrl}/api/auth/login`;
 
 export const logoutRoute=`${baseUrl}/api/auth/logout`;
+export const verifyRoute=`${baseUrl}/api/auth/verify`;
 
 // set avatar routes:
 export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
+
+
+// imageUploadRoute:
+export const imageUpload=`${baseUrl}/api/artGenerator/uploadImageToCloudinary`;

@@ -15,15 +15,15 @@ export default function ArtProvider({ children }) {
     };
     
   
-    const [currentUser, setCurrentUser] = useState(undefined); // Current logged in user
+    const [userDetails, setUserDetails] = useState(undefined); // Current logged in user
     
 
-    
+    const [isAuthenticated,setIsAuthenticated]=useState(false);
    
       
 
  
-    const value = { toastOptions, currentUser, setCurrentUser};
+    const value = { toastOptions, userDetails,setUserDetails,isAuthenticated,setIsAuthenticated};
 
     return (<artContext.Provider value={value}>
         {children}

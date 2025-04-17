@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react"
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { signupRoute } from "../utils/ApiRoutes";
-import { artContext } from "../context/artContext";
+import { artContext } from "../context/artContext.jsx";
 
 const Signup = (props) => {
     const [userData, setUserData] = useState({
