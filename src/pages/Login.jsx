@@ -10,7 +10,7 @@ const Login = (props) => {
         username: "",
         password: "",
     });
-    const {setCurrentUser}=useContext(artContext);
+   
 
     const {toastOptions}=useContext(artContext);
     const navigate=useNavigate();
@@ -52,7 +52,7 @@ const Login = (props) => {
                 console.log(data)
                 if (data.success) {
                     toast.success("login successfull...",toastOptions);
-                    setCurrentUser(data.user)
+               
                      navigate("/");
 
                 } else {

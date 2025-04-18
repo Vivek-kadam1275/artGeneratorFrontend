@@ -13,3 +13,9 @@ export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
 
 // imageUploadRoute:
 export const imageUpload=`${baseUrl}/api/artGenerator/uploadImageToCloudinary`;
+
+
+// save image to db:
+export const storeImage=`${baseUrl}/api/artGenerator/saveImage`;
+// get images from db:
+export const getImages=`${baseUrl}/api/artGenerator/getImages`;
