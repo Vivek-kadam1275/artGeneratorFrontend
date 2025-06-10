@@ -80,7 +80,7 @@ const Login = (props) => {
     return (
         <div className="flex flex-col bg-[#131324]   h-screen w-screen   justify-center items-center gap-4 text-white">
 
-            <form action="" onSubmit={handleSubmit} className="flex flex-col gap-8 bg-[#00000076]    rounded-[8px]  py-12 px-20">
+            <form  onSubmit={handleSubmit} className="flex flex-col gap-8 bg-[#00000076]    rounded-[8px]  py-12 px-20">
                 <div className="flex items-center justify-center gap-4">
                     <img src="https://res.cloudinary.com/dti8wm0fk/image/upload/v1739619094/logo_d8c0as.svg" alt="logo" className="w-20" />
                     <h1 className="uppercase text-white text-2xl"> Modern-Arter</h1>

@@ -44,7 +44,7 @@ const Gallery = (props) => {
       <Navbar />
       <div className="bg-gradient-to-b from-purple-600 to-blue-900 pt-10 md:min-h-[90%] ">
         {loading ? <div className="w-full h-80 flex justify-center items-center ">
-          <div class="spinner"></div>
+          <div className="spinner"></div>
         </div> : <div >
           {imagesData.length>0 ? <div className=" w-[70%] mx-auto flex flex-wrap justify-center gap-8  ">
           {imagesData.map((item) => {

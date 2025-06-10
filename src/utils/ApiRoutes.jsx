@@ -11,6 +11,8 @@ export const verifyRoute=`${baseUrl}/api/auth/verify`;
 export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
 
 
+// generate image using dalle route:
+export const dalleRoute=`${baseUrl}/api/artGenerator/dalle`
 // imageUploadRoute:
 export const imageUpload=`${baseUrl}/api/artGenerator/uploadImageToCloudinary`;
 
