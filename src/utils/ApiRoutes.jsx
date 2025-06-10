@@ -13,6 +13,8 @@ export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
 
 // generate image using dalle route:
 export const dalleRoute=`${baseUrl}/api/artGenerator/dalle`
+export const replicateRoute=`${baseUrl}/api/artGenerator/scribble`
+
 // imageUploadRoute:
 export const imageUpload=`${baseUrl}/api/artGenerator/uploadImageToCloudinary`;
 

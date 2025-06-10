@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 // import axios from "axios";
-import { dalleRoute, imageUpload, storeImage } from "../utils/ApiRoutes.jsx";
+import { dalleRoute, imageUpload, replicateRoute, storeImage } from "../utils/ApiRoutes.jsx";
 
 const ArtGeneration = (props) => {
   const { toastOptions } = useContext(artContext);
@@ -49,7 +49,7 @@ const ArtGeneration = (props) => {
 
     console.log("into replicate")
     const scribble = await canvasRef.current.exportImage("jpeg");
-    const res = await fetch("http://localhost:3000/api/artGenerator/scribble", {
+    const res = await fetch(replicateRoute, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt, scribble }),
