@@ -14,6 +14,8 @@ export const resetPasswordRoute=`${baseUrl}/api/auth/resetPassword`
 export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
 
 
+// get user details:
+export const getUserRoute=`${baseUrl}/api/artGenerator/getUserDetails`
 // generate image using dalle route:
 export const dalleRoute=`${baseUrl}/api/artGenerator/dalle`
 export const replicateRoute=`${baseUrl}/api/artGenerator/scribble`
