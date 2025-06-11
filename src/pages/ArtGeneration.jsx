@@ -88,7 +88,7 @@ const ArtGeneration = (props) => {
 
 
       if (generatedImage.current==="" || !generatedImage.current) {
-        toast.error("Image generation failed.");
+        toast.error("Image generation failed.",toastOptions);
          console.log("Sorry for incovenience.Please try again.");
         console.log("Image not generated------>")
         setLoading(false);
