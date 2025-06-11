@@ -89,7 +89,7 @@ const ArtGeneration = (props) => {
 
       if (generatedImage.current==="" || !generatedImage.current) {
         toast.error("Image generation failed.");
-         toast.error("Sorry for incovenience.Please try again.");
+         console.log("Sorry for incovenience.Please try again.");
         console.log("Image not generated------>")
         setLoading(false);
         return;
@@ -125,7 +125,7 @@ const ArtGeneration = (props) => {
     saveImageToDatabase(data.url);
     setPrompt("");
     canvasRef.current.clearCanvas();
-    generatedImage.current("");
+    generatedImage.current="";
 
   }
 

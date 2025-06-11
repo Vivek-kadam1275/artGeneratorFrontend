@@ -11,6 +11,8 @@ import Gallery from './pages/Gallery';
 import Instructions from './pages/Instructions';
 import SetAvatar from './pages/SetAvatar';
 import ProtectedRoute from './components/ProtectedRoute';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 
 
 function App() {
@@ -45,7 +47,16 @@ function App() {
       element: <ProtectedRoute>
         <Instructions />
       </ProtectedRoute>
+    },
+    {
+      path: "/forgot-password",
+      element:
+        <ForgotPassword/>
+    },{
+      path:"/reset-password/:token",
+      element:<ResetPassword/>
     }
+
   ])
   return (
     <>

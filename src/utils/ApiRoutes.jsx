@@ -7,6 +7,9 @@ export const loginRoute=`${baseUrl}/api/auth/login`;
 export const logoutRoute=`${baseUrl}/api/auth/logout`;
 export const verifyRoute=`${baseUrl}/api/auth/verify`;
 
+export const forgotPasswordRoute=`${baseUrl}/api/auth/reqForgotPassword`
+export const resetPasswordRoute=`${baseUrl}/api/auth/resetPassword`
+
 // set avatar routes:
 export const setAvatar=`${baseUrl}/api/chatApp/setAvatar`;
 
